@@ -1,4 +1,3 @@
-/* src/components/Hero.css */
 .hero {
     display: flex;
     align-items: center;
@@ -9,7 +8,7 @@
 }
 
 .hero-left img {
-    max-width: 100%;
+    width: 720px;
     height: auto;
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -22,7 +21,10 @@
 
 .hero-right {
     max-width: 600px;
+    min-height: 280px;
     color: var(--main-text);
+    transition: all 0.4s ease;
+    cursor: default;
 }
 
 .hero-right h1 {
@@ -34,6 +36,56 @@
 .hero-right p {
     font-family: var(--font-primary);
     font-size: 1.2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: var(--main-text);
+}
+
+/* Style pour la phrase cliquable */
+.switch-container {
+    background-color: rgba(60, 79, 54, 0.05);
+    padding: 1rem 1.5rem;
+    border-left: 4px solid #3C4F36;
+    border-radius: 12px;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    max-width: 90%;
+    font-style: italic;
+}
+
+.switch-container p {
+    margin: 0;
+    color: #3C4F36;
+    font-weight: 500;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.switch-container:hover {
+    transform: scale(1.03);
+    background-color: rgba(60, 79, 54, 0.1);
+}
+
+.hero-buttons {
+    margin-top: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left img {
+        width: 180px;
+    }
+
+    .hero-right {
+        margin-top: 2rem;
+    }
+
+    .switch-container {
+        text-align: center;
+    }
 }

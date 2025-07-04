@@ -32,12 +32,12 @@ const StyledWrapper = styled.div`
 
   button::before {
     left: -10px;
-    background: var(--highlight); /* rose */
+    background: var(--highlight); /* rose pastel */
   }
 
   button::after {
     right: -10px;
-    background: var(--main-text); /* brun */
+    background: var(--main-text); /* brun élégant */
   }
 
   button:hover::before,
