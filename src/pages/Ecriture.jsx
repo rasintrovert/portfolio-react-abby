@@ -1,3 +1,10 @@
+import React from "react";
+import PageWrapper from "../components/PageWrapper";
+
 export default function Ecriture() {
-    return <h1>Ecriture</h1>;
+    return (
+        <PageWrapper>
+            <h1>Écriture</h1>
+        </PageWrapper>
+    );
 }

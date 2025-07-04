@@ -1,3 +1,10 @@
+import React from "react";
+import PageWrapper from "../components/PageWrapper";
+
 export default function Projets() {
-    return <h1>Projets</h1>;
+    return (
+        <PageWrapper>
+            <h1>Projets</h1>
+        </PageWrapper>
+    );
 }
