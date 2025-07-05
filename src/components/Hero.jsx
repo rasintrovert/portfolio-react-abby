@@ -3,6 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./Hero.css";
 import Bouton from "./Bouton";
 import imageMoi from "../assets/Moi.jpg";
+import { Link } from "react-router-dom";   // si pas déjà importé
+
 
 const Hero = () => {
     const [showIntrovert, setShowIntrovert] = useState(false);
@@ -33,7 +35,9 @@ const Hero = () => {
                                 <p>Mais parfois… une autre voix prend le relais.</p>
                             </div>
                             <div className="hero-buttons">
-                                <Bouton>Voir mes projets</Bouton>
+                                <Link to="/projets">
+                                    <Bouton>Voir mes projets</Bouton>
+                                </Link>
                             </div>
                         </motion.div>
                     ) : (
@@ -54,7 +58,9 @@ const Hero = () => {
                                 <p>La plume repose… et les lignes de code reprennent.</p>
                             </div>
                             <div className="hero-buttons">
-                                <Bouton>Lire mes écrits</Bouton>
+                                <Link to="/idees">
+                                    <Bouton>Lire mes écrits</Bouton>
+                                </Link>
                             </div>
                         </motion.div>
                     )}
