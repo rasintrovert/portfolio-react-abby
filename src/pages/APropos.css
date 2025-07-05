@@ -1,0 +1,79 @@
+.a-propos-page {
+    padding: 4rem 5%;
+    background-color: var(--main-bg);
+    color: var(--main-text);
+    font-family: var(--font-primary);
+}
+
+/* 1. Introduction */
+.intro-section {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.intro-section h1 {
+    font-size: 2.8rem;
+    font-family: var(--font-secondary);
+    margin-bottom: 1rem;
+}
+
+.intro-section p {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--main-text);
+}
+
+/* 3. Timeline */
+.timeline-section {
+    margin-bottom: 4rem;
+}
+
+.timeline-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-secondary);
+    text-align: center;
+}
+
+/* 4. CV Express */
+.cv-section {
+    margin-bottom: 4rem;
+}
+
+.cv-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-secondary);
+    text-align: center;
+}
+
+/* 5. Citation */
+.citation-section {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 4rem 0 2rem;
+    color: var(--highlight);
+}
+
+blockquote {
+    quotes: "“" "”";
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 2rem;
+    vertical-align: top;
+}
+
+blockquote::after {
+    content: close-quote;
+    font-size: 2rem;
+    vertical-align: bottom;
+}
+
+/* 6. Contact bouton */
+.contact-button {
+    text-align: center;
+    margin-top: 2rem;
+}
