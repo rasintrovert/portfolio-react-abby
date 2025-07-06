@@ -152,7 +152,7 @@ export default function ProjetDetails() {
                 <StyledProjet>
                     <h2>Projet introuvable</h2>
                     <Link to="/projets">
-                        <Bouton texte="← Retour aux projets" />
+                        <Bouton>← Retour aux projets</Bouton>
                     </Link>
                 </StyledProjet>
             </PageWrapper>
@@ -180,10 +180,10 @@ export default function ProjetDetails() {
 
                 <div className="btns">
                     <Link to="/projets">
-                        <Bouton texte="← Retour aux projets" />
+                        <Bouton>Retour aux projets</Bouton>
                     </Link>
                     <Link to="/contact">
-                        <Bouton texte="💌 Me contacter" />
+                        <Bouton>💌 Me contacter</Bouton>
                     </Link>
                 </div>
             </StyledProjet>
