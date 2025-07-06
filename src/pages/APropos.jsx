@@ -2,7 +2,7 @@
 import React from "react";
 import PageWrapper from "../components/PageWrapper";
 import CartesPhilosophie from "../components/CartesPhilosophie"; // ✅ ajouté ici
-import ParcoursTimeline from "../components/ParcoursTimeline"; // ✅ ajouté ici
+import ParcoursTimeline from "../components/ParcoursTimeLine"; // ✅ ajouté ici (pas de pb)
 import "./APropos.css";
 import Bouton from "../components/Bouton"; // ✅ déjà présent dans ton projet
 import { Link } from "react-router-dom";   // si pas déjà importé

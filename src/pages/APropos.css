@@ -87,7 +87,7 @@
     text-align: center;
     font-style: italic;
     font-size: 1.2rem;
-    margin: 4rem 0 2rem;
+    /* margin: 4rem 0 2rem; */
     color: var(--highlight);
 }
 
@@ -110,5 +110,5 @@ blockquote::after {
 /* 6. Contact bouton */
 .contact-button {
     text-align: center;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
 }

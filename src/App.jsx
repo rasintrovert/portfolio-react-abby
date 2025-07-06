@@ -10,6 +10,9 @@ import Projets from "./pages/Projets";
 import Idees from "./pages/Idees";
 import Ecriture from "./pages/Ecriture";
 import Contact from "./pages/Contact";
+import ProjetDetails from "./pages/ProjetDetails"; // ✅ à créer
+
+
 
 function App() {
   const location = useLocation();
@@ -26,6 +29,7 @@ function App() {
           <Route path="/idees" element={<Idees />} />
           <Route path="/ecriture" element={<Ecriture />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/projets/:slug" element={<ProjetDetails />} />
         </Routes>
       </AnimatePresence>
     </>
