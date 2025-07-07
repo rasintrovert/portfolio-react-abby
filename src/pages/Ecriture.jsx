@@ -60,7 +60,6 @@ export default function Ecriture() {
         },
     ];
 
-
     const [selectedText, setSelectedText] = useState(null);
     const openModal = (index) => setSelectedText(index);
     const closeModal = () => setSelectedText(null);
