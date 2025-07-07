@@ -48,6 +48,16 @@ export default function Ecriture() {
             titre: "Storytelling tech",
             phrase: "Humaniser les projets numériques, un mot à la fois.",
         },
+        {
+            emoji: "🖋️",
+            titre: "Écriture sensible",
+            phrase: "Allier sensibilité et structure, comme un code poétique.",
+        },
+        {
+            emoji: "📖",
+            titre: "Écriture scientifique",
+            phrase: "Écrire pour comprendre les choses, comme un livre scientifique.",
+        },
     ];
 
 
