@@ -1,0 +1,139 @@
+.terminal-container {
+    padding: 3rem 1rem;
+    background: var(--main-bg);
+    /* beige crème */
+    font-family: 'Fira Code', monospace;
+    color: #3C3C3C;
+    /* gris doux lisible */
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.terminal-screen {
+    background-color: #FAF3E0;
+    /* blanc cassé */
+    border-radius: 12px;
+    border: 2px solid #F4C2C2;
+    /* rose pâle */
+    width: 100%;
+    max-width: 680px;
+    padding: 2rem;
+    box-shadow: 0 0 24px rgba(166, 138, 100, 0.12);
+    /* brun clair transparent */
+}
+
+.terminal-line {
+    font-weight: bold;
+    color: #3C3C3C;
+    /* gris doux */
+    margin-bottom: 1rem;
+}
+
+.cursor {
+    display: inline-block;
+    width: 0.7ch;
+    animation: blink 1s steps(1) infinite;
+    color: #3C3C3C;
+}
+
+@keyframes blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    50.01%,
+    100% {
+        opacity: 0;
+    }
+}
+
+.ia-text {
+    white-space: pre-line;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: #D6CFCB;
+    /* gris chaud doux */
+}
+
+.choices-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.choices-list li {
+    padding: 0.5rem 0.8rem;
+    background: #FDFDFD;
+    /* blanc cassé */
+    margin: 0.4rem 0;
+    border: 1px solid #F4C2C2;
+    /* rose pâle */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #3C3C3C;
+}
+
+.choices-list li:hover {
+    background-color: var(--main-text);
+    /* brun clair */
+    color: #FAF3E0;
+    /* beige crème */
+}
+
+/* Formulaire */
+.terminal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.terminal-form label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #F4C2C2;
+    /* rose pâle */
+}
+
+.terminal-form input,
+.terminal-form textarea {
+    padding: 0.7rem;
+    border: 1px solid var(--main-text);
+    /* brun clair */
+    border-radius: 6px;
+    background-color: #FDFDFD;
+    /* blanc cassé */
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+    color: #3C3C3C;
+}
+
+.terminal-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-terminal {
+    align-self: flex-end;
+    background-color: #F4C2C2;
+    /* rose pâle */
+    color: #3C3C3C;
+    /* gris doux */
+    border: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+.btn-terminal:hover {
+    background-color: var(--main-text);
+    /* brun clair */
+    color: #FDFDFD;
+    /* blanc cassé */
+}

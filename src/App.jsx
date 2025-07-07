@@ -2,7 +2,8 @@ import React from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
-import Header from "./components/Header.jsx";
+import Header from "./components/Header";
+import Footer from "./components/Footer"; // ✅ on importe le Footer
 
 import Accueil from "./pages/Accueil";
 import APropos from "./pages/APropos";
@@ -10,9 +11,7 @@ import Projets from "./pages/Projets";
 import Idees from "./pages/Idees";
 import Ecriture from "./pages/Ecriture";
 import Contact from "./pages/Contact";
-import ProjetDetails from "./pages/ProjetDetails"; // ✅ à créer
-
-
+import ProjetDetails from "./pages/ProjetDetails";
 
 function App() {
   const location = useLocation();
@@ -32,6 +31,8 @@ function App() {
           <Route path="/projets/:slug" element={<ProjetDetails />} />
         </Routes>
       </AnimatePresence>
+
+      <Footer /> {/* ✅ ici le Footer s'affiche sur toutes les pages */}
     </>
   );
 }

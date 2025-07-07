@@ -35,7 +35,7 @@ export default function APropos() {
                         <div className="cv-item">
                             <h3>📍 Localisation & Études</h3>
                             <p>📍 Haïti</p>
-                            <p>🎓 Université Espoir (Calvary Chapel)</p>
+                            <p>🎓 Université Espoir de Calvary Chapel</p>
                             <p>Sciences Informatiques & Gestion des Affaires</p>
                             <p>2024 - en cours</p>
                         </div>
@@ -98,7 +98,7 @@ export default function APropos() {
 
                 <div className="contact-button">
                     <Link to="/contact">
-                        <Bouton>💌 Me contacter</Bouton>
+                        <Bouton>Me contacter</Bouton>
                     </Link>
                 </div>
 

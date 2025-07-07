@@ -62,7 +62,7 @@ export default function Projets() {
                 <section className="projets-footer">
                     <p>Tu veux découvrir d'autres idées ou projets en cours ?</p>
                     <Link to="/idees">
-                        <Bouton>💡 Voir mes idées</Bouton>
+                        <Bouton>Mes idées de projets</Bouton>
                     </Link>
                 </section>
             </div>
