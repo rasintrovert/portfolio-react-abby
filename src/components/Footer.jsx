@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Footer() {
     const year = new Date().getFullYear();
@@ -12,12 +13,12 @@ export default function Footer() {
                 </span>
 
                 <nav className="footer__nav">
-                    <a href="/">Accueil</a>
-                    <a href="/a-propos">À propos</a>
-                    <a href="/projets">Projets</a>
-                    <a href="/idees">Idées</a>
-                    <a href="/ecriture">Ecriture</a>
-                    <a href="/contact">Contact</a>
+                    <NavLink to="/" end>Accueil</NavLink>
+                    <NavLink to="/a-propos">A propos</NavLink>
+                    <NavLink to="/projets">Projets</NavLink>
+                    <NavLink to="/idees">Idées</NavLink>
+                    <NavLink to="/ecriture">Ecriture</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
                 </nav>
 
                 <div className="footer__socials">
