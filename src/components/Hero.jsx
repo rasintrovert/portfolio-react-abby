@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import "./Hero.css";
 import Bouton from "./Bouton";
 import imageMoi from "../assets/Moi.jpg";
-import { Link } from "react-router-dom";   // si pas déjà importé
+import { Link } from "react-router-dom";
 
 
 const Hero = () => {

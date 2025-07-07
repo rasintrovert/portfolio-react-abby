@@ -1,4 +1,3 @@
-// src/components/Bouton.jsx
 import React from 'react';
 import styled from 'styled-components';
 
@@ -59,13 +58,13 @@ const StyledWrapper = styled.div`
 `;
 
 const Bouton = ({ children, onClick }) => {
-    return (
-        <StyledWrapper>
-            <button onClick={onClick}>
-                <span>{children}</span>
-            </button>
-        </StyledWrapper>
-    );
+  return (
+    <StyledWrapper>
+      <button onClick={onClick}>
+        <span>{children}</span>
+      </button>
+    </StyledWrapper>
+  );
 };
 
 export default Bouton;

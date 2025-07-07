@@ -1,6 +1,5 @@
 .intro-ecriture {
     background-color: #fff8f4;
-    /* fond doux dans les tons rose/ivoire */
     padding: 60px 20px;
     text-align: center;
     animation: fadeIn 1.8s ease-in-out both;
@@ -11,13 +10,11 @@
     font-size: 1.4rem;
     font-style: italic;
     color: var(--main-text);
-    /* ou choisis une couleur douce de ta palette */
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.6;
 }
 
-/* Animation douce d’apparition */
 @keyframes fadeIn {
     0% {
         opacity: 0;

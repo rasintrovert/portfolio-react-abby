@@ -78,7 +78,6 @@ export default function Ecriture() {
                     ))}
                 </div>
 
-                {/* Modale */}
                 {selectedText !== null && (
                     <div className="modal-overlay" onClick={closeModal}>
                         <div className="modal-content" onClick={(e) => e.stopPropagation()}>

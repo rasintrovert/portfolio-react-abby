@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 import Header from "./components/Header";
-import Footer from "./components/Footer"; // ✅ on importe le Footer
+import Footer from "./components/Footer";
 
 import Accueil from "./pages/Accueil";
 import APropos from "./pages/APropos";
@@ -32,7 +32,7 @@ function App() {
         </Routes>
       </AnimatePresence>
 
-      <Footer /> {/* ✅ ici le Footer s'affiche sur toutes les pages */}
+      <Footer />
     </>
   );
 }

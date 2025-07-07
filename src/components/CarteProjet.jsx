@@ -3,36 +3,33 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export default function CarteProjet({
-    titre,
-    description,
-    image,
-    categorie,
-    slug,
+  titre,
+  description,
+  image,
+  categorie,
+  slug,
 }) {
-    return (
-        <StyledWrapper>
-            <div className="card">
-                <img src={image} alt={titre} className="card-img" />
-                <div className="card__content">
-                    <p className="card__title">{titre}</p>
+  return (
+    <StyledWrapper>
+      <div className="card">
+        <img src={image} alt={titre} className="card-img" />
+        <div className="card__content">
+          <p className="card__title">{titre}</p>
 
-                    {/* description scrollable si longue */}
-                    <p className="card__description">{description}</p>
+          <p className="card__description">{description}</p>
 
-                    <Link to={`/projets/${slug}`} className="voir-plus">
-                        Voir plus
-                    </Link>
-                </div>
+          <Link to={`/projets/${slug}`} className="voir-plus">
+            Voir plus
+          </Link>
+        </div>
 
-                {/* pastille catégorie (toujours en bas / gauche) */}
-                <span className="badge">{categorie}</span>
-            </div>
-        </StyledWrapper>
-    );
+        <span className="badge">{categorie}</span>
+      </div>
+    </StyledWrapper>
+  );
 }
 
 const StyledWrapper = styled.div`
-  /* ----------- Carte ----------- */
   .card {
     position: relative;
     width: clamp(260px, 30vw, 420px);
@@ -47,7 +44,6 @@ const StyledWrapper = styled.div`
     cursor: pointer;
   }
 
-  /* ----------- Image ----------- */
   .card-img {
     width: 100%;
     height: 100%;
@@ -58,7 +54,6 @@ const StyledWrapper = styled.div`
     transform: scale(0);
   }
 
-  /* ----------- Contenu retourné ----------- */
   .card__content {
     position: absolute;
     inset: 0;
@@ -90,9 +85,8 @@ const StyledWrapper = styled.div`
     padding-right: 4px;
   }
 
-  /* ----------- Bouton voir plus ----------- */
   .voir-plus {
-    position: absolute;      /* ⬅️ positionné par rapport à .card__content */
+    position: absolute;      
     bottom: 10px;
     right: 12px;
 
@@ -111,7 +105,6 @@ const StyledWrapper = styled.div`
     color: #fffdf9;
   }
 
-  /* ----------- Badge (pastille) ----------- */
   .badge {
     position: absolute;
     bottom: 10px;

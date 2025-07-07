@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import "../pages/Contact.css";
 
 export default function TerminalContact() {
-    const [step, setStep] = useState(0); // 0 = intro, 1 = formulaire, 2 = confirmation
+    const [step, setStep] = useState(0);
     const [motif, setMotif] = useState("");
     const [formData, setFormData] = useState({ nom: "", email: "", message: "" });
     const [typedLines, setTypedLines] = useState([]);
@@ -28,7 +28,7 @@ export default function TerminalContact() {
             return () => clearTimeout(timeout);
         }
         if (lineIndex === lines.length) {
-            setShowCursor(false); // Stop blinking cursor once all lines are shown
+            setShowCursor(false);
         }
     }, [lineIndex, step]);
 
@@ -47,7 +47,6 @@ export default function TerminalContact() {
 
         setStep(2);
 
-        // Réinitialisation après 5 secondes
         setTimeout(() => {
             setStep(0);
             setMotif("");
@@ -83,7 +82,7 @@ export default function TerminalContact() {
                             {!showCursor && (
                                 <ul className="choices-list">
                                     <li onClick={() => handleMotifSelect("voir-projet")}>
-                                        [1] Voir un projet complet 🔍
+                                        [1] Voir un projet complet 📂
                                     </li>
                                     <li onClick={() => handleMotifSelect("collaboration")}>
                                         [2] Collaborer sur une idée 💡
@@ -92,7 +91,7 @@ export default function TerminalContact() {
                                         [3] L’embaucher pour un service ✍️
                                     </li>
                                     <li onClick={() => handleMotifSelect("encouragement")}>
-                                        [4] Lui envoyer un mot doux 💖
+                                        [4] Lui envoyer un mot d'encouragement 💌 ou autre
                                     </li>
                                 </ul>
                             )}
@@ -144,7 +143,7 @@ export default function TerminalContact() {
                                 required
                             />
 
-                            <button type="submit" className="btn-terminal">Envoyer ✉️</button>
+                            <button type="submit" className="btn-terminal">Envoyer 📩</button>
                         </motion.form>
                     )}
 
@@ -155,7 +154,7 @@ export default function TerminalContact() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                         >
-                            <pre className="terminal-line">{'> transmission réussie ✅'}</pre>
+                            <pre className="terminal-line">{'> transmission réussie 🎉'}</pre>
                             <pre className="ia-text">
                                 🌸 Message bien reçu.{"\n"}
                                 Le terminal se déconnecte...{"\n"}

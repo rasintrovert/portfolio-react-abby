@@ -40,7 +40,6 @@
     color: var(--main-text);
 }
 
-/* Style pour la phrase cliquable */
 .switch-container {
     background-color: rgba(60, 79, 54, 0.05);
     padding: 1rem 1.5rem;
@@ -70,7 +69,6 @@
     margin-top: 1.5rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     .hero {
         flex-direction: column;

@@ -2,33 +2,33 @@ import React from "react";
 import styled from "styled-components";
 
 const CartesPhilosophie = () => {
-    return (
-        <StyledWrapper>
-            <div className="card">
-                <h2 className="heading">Mes compétences clés</h2>
-                <ul>
-                    <li>Développement web (React, HTML/CSS, Tailwind)</li>
-                    <li>Conception UI/UX</li>
-                    <li>Gestion de projet & organisation</li>
-                    <li>Communication & storytelling</li>
-                    <li>Création de contenu</li>
-                </ul>
-            </div>
+  return (
+    <StyledWrapper>
+      <div className="card">
+        <h2 className="heading">Mes compétences clés</h2>
+        <ul>
+          <li>Développement web (React, HTML/CSS, Tailwind)</li>
+          <li>Conception UI/UX</li>
+          <li>Gestion de projet & organisation</li>
+          <li>Communication & storytelling</li>
+          <li>Création de contenu</li>
+        </ul>
+      </div>
 
-            <div className="card">
-                <h2 className="heading">Ma personnalité & philosophie</h2>
-                <p>
-                    Je suis une personne douce, passionnée et perfectionniste. Je crois
-                    que l’élégance réside dans la simplicité bien pensée.
-                </p>
-                <p>
-                    J’aime construire des choses utiles, belles et humaines, avec un
-                    équilibre entre logique, émotions et foi.
-                </p>
-                <p className="signature">— Abigaëlle Jean</p>
-            </div>
-        </StyledWrapper>
-    );
+      <div className="card">
+        <h2 className="heading">Ma personnalité & philosophie</h2>
+        <p>
+          Je suis une personne douce, passionnée et curieuse. Je suis convaincue que la simplicité est la clé pour la compréhension et la créativité.
+          L'élégance réside dans la simplicité bien pensée.
+        </p>
+        <p>
+          J’aime construire des choses utiles, belles et humaines, avec un
+          équilibre entre logique, émotions et foi.
+        </p>
+        <p className="signature">— Abigaëlle Jean</p>
+      </div>
+    </StyledWrapper>
+  );
 };
 
 const StyledWrapper = styled.div`

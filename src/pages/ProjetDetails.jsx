@@ -143,7 +143,6 @@ conn.Close();`
 export default function ProjetDetails() {
     const { slug } = useParams();
 
-    // Recherche du projet par slug
     const projet = projetsSimules.find((p) => p.slug === slug);
 
     if (!projet) {
