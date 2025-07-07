@@ -1,18 +1,30 @@
 .header {
     position: sticky;
     top: 0;
-    left: 0;
     width: 100%;
     background-color: #fff8f0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 100;
-    padding: 1rem 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.8rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3e2723;
 }
 
 .nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
 }
 
@@ -22,15 +34,67 @@
     color: #3e2723;
     font-weight: 600;
     font-size: 1.1rem;
-    padding: 0.5rem 0;
     transition: color 0.3s ease;
+    position: relative;
 }
 
-.nav-link:hover {
-    color: #f4a6a6;
-}
-
+.nav-link:hover,
 .nav-link.active {
     color: #f4a6a6;
-    border-bottom: 2px solid #f4a6a6;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #f4a6a6;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #3e2723;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color: #fff8f0;
+        padding: 1rem 0;
+        display: none;
+        gap: 1rem;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        animation: slideDown 0.3s ease-in-out;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
