@@ -1,7 +1,7 @@
 import React from "react";
 import PageWrapper from "../components/PageWrapper";
 import CartesPhilosophie from "../components/CartesPhilosophie";
-import ParcoursTimeline from "../components/ParcoursTimeLine";
+import ParcoursTimeline from "../components/Parcours";
 import "./APropos.css";
 import Bouton from "../components/Bouton";
 import { Link } from "react-router-dom";
